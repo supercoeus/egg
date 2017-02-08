@@ -153,7 +153,6 @@ describe('test/lib/application.test.js', () => {
       const logfile = path.join(utils.getFilepath('apps/app-throw'), 'logs/app-throw/common-error.log');
       const body = fs.readFileSync(logfile, 'utf8');
       assert(body.includes('ReferenceError: a is not defined (uncaughtException throw'));
-      console.log(body);
     });
   });
 });
